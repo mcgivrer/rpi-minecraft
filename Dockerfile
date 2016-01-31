@@ -32,7 +32,7 @@ RUN apt-get --yes update
 # Make sure the Oracle Java 8 license is pre-accepted, and install Java 8
 RUN    echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections  && \
        echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections  && \
-       apt-get --yes install curl oracle-java8-installer
+       apt-get --yes install curl oracle-java8-installer ; apt-get clean
 
 
 # Load in all of our config files.
