@@ -5,11 +5,11 @@
 # Authors: Isaac Bythewood
 # Updated: Dec 14th, 2014
 # -----------------------------------------------------------------------------
-
+export MINECRAFT_SERVER_VERSION=1.10.2
 
 if [ ! -f /data/minecraft_server.jar ]
 then
-    curl "https://s3.amazonaws.com/Minecraft.Download/versions/1.10.2/minecraft_server.1.10.2.jar" -o /data/minecraft_server.jar
+    curl "https://s3.amazonaws.com/Minecraft.Download/versions/$MINECRAFT_SERVER_VERSION/minecraft_server.$MINECRAFT_SERVER_VERSION.jar" -o /data/minecraft_server.jar
 fi
 
 if [ ! -f /data/eula.txt ]
