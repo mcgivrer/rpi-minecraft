@@ -3,6 +3,8 @@
 A nice and easy way to get a Minecraft server up and running using docker on a Raspberry Pi. For help on getting started with docker see the [official getting started guide][0].
 For more information on Minecraft and check out it's [website][1].
 
+> **NOTE**
+> More information at https://minecraft.gamepedia.com/Tutorials/Setting_up_a_server
 
 ## Building rpi-minecraft
 
